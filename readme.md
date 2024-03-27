@@ -41,7 +41,7 @@ This repository serves as a log of my exploration into the world of data structu
   - Binary search
   - Depth-First Search (DFS)
   - Breadth-First Search (BFS)
- **Sorting Algorithms**
+-  **Sorting Algorithms**
   - [x] Bubble Sort
   - [x] Selection Sort
   - [x] Insertion Sort
