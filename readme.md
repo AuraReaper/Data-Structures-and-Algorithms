@@ -42,9 +42,9 @@ This repository serves as a log of my exploration into the world of data structu
   - Depth-First Search (DFS)
   - Breadth-First Search (BFS)
 - [ ] **Sorting Algorithms**
-  - Bubble Sort
-  - Selection Sort
-  - Insertion Sort
+  - Bubble Sort - [x]
+  - Selection Sort - [x]
+  - Insertion Sort - [x]
   - Merge Sort
   - Quick Sort
 - [ ] **Dynamic Programming**
