@@ -1,0 +1,6 @@
+1. rotate a given square matrix by 90 degree clockwise.
+2. multiply 2 given matrix using 2d array/vector concept.
+3. given a nxm matrix print all its elements in spiral order.
+4. check for palindrome in a recursive code.
+5. frog problem.
+6. given n and m compute n modulo m (HINT: use pisano sequence).
