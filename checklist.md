@@ -1,0 +1,162 @@
+### Data Structures Course
+
+- [x] Lecture 1 on 4/3/24
+- [x] Lecture 2 on 5/3/24
+- [x] Lecture 3 on 6/3/24
+- [x] Lecture 4 on 7/3/24
+- [x] Lecture 5 on 8/3/24
+- [x] Lecture 6 on 9/3/24
+- [x] Lecture 7 on 10/3/24
+- [x] Lecture 8 on 11/3/24
+- [x] Lecture 9 on 12/3/24
+- [x] Lecture 10 on 13/3/24
+- [x] Lecture 11 on 14/3/24
+- [x] Lecture 12 on 15/3/24
+- [x] Lecture 13 on 16/3/24
+- [x] Lecture 14 on 17/3/24
+- [x] Lecture 15 on 18/3/24
+- [x] Lecture 16 on 19/3/24
+- [x] Lecture 17 on 20/3/24
+- [x] Lecture 18 on 21/3/24
+- [x] Lecture 19 on 22/3/24
+- [x] Lecture 20 on 23/3/24
+- [x] Lecture 21 on 24/3/24
+- [x] Lecture 22 on 25/3/24
+- [ ] Lecture 23
+- [ ] Lecture 24
+- [ ] Lecture 25
+- [ ] Lecture 26
+- [ ] Lecture 27
+- [ ] Lecture 28
+- [ ] Lecture 29
+- [ ] Lecture 30
+- [ ] Lecture 31
+- [ ] Lecture 32
+- [ ] Lecture 33
+- [ ] Lecture 34
+- [ ] Lecture 35
+- [ ] Lecture 36
+- [ ] Lecture 37
+- [ ] Lecture 38
+- [ ] Lecture 39
+- [ ] Lecture 40
+- [ ] Lecture 41
+- [ ] Lecture 42
+- [ ] Lecture 43
+- [ ] Lecture 44
+- [ ] Lecture 45
+- [ ] Lecture 46
+- [ ] Lecture 47
+- [ ] Lecture 48
+- [ ] Lecture 49
+- [ ] Lecture 50
+- [ ] Lecture 51
+- [ ] Lecture 52
+- [ ] Lecture 53
+- [ ] Lecture 54
+- [ ] Lecture 55
+- [ ] Lecture 56
+- [ ] Lecture 57
+- [ ] Lecture 58
+- [ ] Lecture 59
+- [ ] Lecture 60
+- [ ] Lecture 61
+- [ ] Lecture 62
+- [ ] Lecture 63
+- [ ] Lecture 64
+- [ ] Lecture 65
+- [ ] Lecture 66
+- [ ] Lecture 67
+- [ ] Lecture 68
+- [ ] Lecture 69
+- [ ] Lecture 70
+- [ ] Lecture 71
+- [ ] Lecture 72
+- [ ] Lecture 73
+- [ ] Lecture 74
+- [ ] Lecture 75
+- [ ] Lecture 76
+- [ ] Lecture 77
+- [ ] Lecture 78
+- [ ] Lecture 79
+- [ ] Lecture 80
+- [ ] Lecture 81
+- [ ] Lecture 82
+- [ ] Lecture 83
+- [ ] Lecture 84
+- [ ] Lecture 85
+- [ ] Lecture 86
+- [ ] Lecture 87
+- [ ] Lecture 88
+- [ ] Lecture 89
+- [ ] Lecture 90
+- [ ] Lecture 91
+- [ ] Lecture 92
+- [ ] Lecture 93
+- [ ] Lecture 94
+- [ ] Lecture 95
+- [ ] Lecture 96
+- [ ] Lecture 97
+- [ ] Lecture 98
+- [ ] Lecture 99
+- [ ] Lecture 100
+- [ ] Lecture 101
+- [ ] Lecture 102
+- [ ] Lecture 103
+- [ ] Lecture 104
+- [ ] Lecture 105
+- [ ] Lecture 106
+- [ ] Lecture 107
+- [ ] Lecture 108
+- [ ] Lecture 109
+- [ ] Lecture 110
+- [ ] Lecture 111
+- [ ] Lecture 112
+- [ ] Lecture 113
+- [ ] Lecture 114
+- [ ] Lecture 115
+- [ ] Lecture 116
+- [ ] Lecture 117
+- [ ] Lecture 118
+- [ ] Lecture 119
+- [ ] Lecture 120
+- [ ] Lecture 121
+- [ ] Lecture 122
+- [ ] Lecture 123
+- [ ] Lecture 124
+- [ ] Lecture 125
+- [ ] Lecture 126
+- [ ] Lecture 127
+- [ ] Lecture 128
+- [ ] Lecture 129
+- [ ] Lecture 130
+- [ ] Lecture 131
+- [ ] Lecture 132
+- [ ] Lecture 133
+- [ ] Lecture 134
+- [ ] Lecture 135
+- [ ] Lecture 136
+- [ ] Lecture 137
+- [ ] Lecture 138
+- [ ] Lecture 139
+- [ ] Lecture 140
+- [ ] Lecture 141
+- [ ] Lecture 142
+- [ ] Lecture 143
+- [ ] Lecture 144
+- [ ] Lecture 145
+- [ ] Lecture 146
+- [ ] Lecture 147
+- [ ] Lecture 148
+- [ ] Lecture 149
+- [ ] Lecture 150
+- [ ] Lecture 151
+- [ ] Lecture 152
+- [ ] Lecture 153
+- [ ] Lecture 154
+- [ ] Lecture 155
+- [ ] Lecture 156
+- [ ] Lecture 157
+- [ ] Lecture 158
+- [ ] Lecture 159
+- [ ] Lecture 160
