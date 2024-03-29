@@ -22,7 +22,7 @@
 - [x] Lecture 20 on 23/3/24
 - [x] Lecture 21 on 24/3/24
 - [x] Lecture 22 on 25/3/24
-- [ ] Lecture 23
+- [x] Lecture 23 on 29/3/24
 - [ ] Lecture 24
 - [ ] Lecture 25
 - [ ] Lecture 26
