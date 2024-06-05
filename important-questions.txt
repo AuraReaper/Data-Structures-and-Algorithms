@@ -3,4 +3,5 @@
 3. given a nxm matrix print all its elements in spiral order.
 4. check for palindrome in a recursive code.
 5. frog problem.
-6. given n and m compute n modulo m (HINT: use pisano sequence).
+6. given n and m compute n modulo m (HINT: use pisano sequence).\
+7. print a matrix in spiral form (LeetCode 54)
