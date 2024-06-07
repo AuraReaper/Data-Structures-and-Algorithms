@@ -1,0 +1,16 @@
+** rotation By 90 degrees clockwise **
+
+Method 1 : We can create a 2D Vector and fill it likewise ans[j][n-1-i] for clockwise rotation 
+
+Method 2 : find transpose of matrix and then reverse row using 2 pointers
+
+** Rotation By 180 degrees clockwise **
+
+Swap the rows from up to down using 2 pointers by matrix[start][j] , matrix[end][j] 
+and then reverse each column using 2 pointers 
+....
+aka uoar wale ko niche lana hai and then right wala ko left lana hai using 2 pointers.
+
+
+Note : The trick here in solvingb these question are 2 you will see we swap rows or columns , transpose may be
+       required.

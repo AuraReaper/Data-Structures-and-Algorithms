@@ -1,0 +1,8 @@
+GFG Triplet Sum in Array
+
+Method 1 : use 3 loops
+Method 2 : use 2 loops for sum and 1 to search the third number
+Method 3 : converting it into 2 sum let the A[i] be the first number subtract it with target and solve 2 Sum
+           problem from (i + 1) to n.
+
+If facing problem check Lecture 30 of CoderArmy.
