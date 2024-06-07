@@ -5,3 +5,4 @@
 5. frog problem.
 6. given n and m compute n modulo m (HINT: use pisano sequence).\
 7. print a matrix in spiral form (LeetCode 54)
+8. Search in a row-column sorted Matrix (GFG)
