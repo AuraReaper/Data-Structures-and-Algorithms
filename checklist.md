@@ -29,11 +29,11 @@
 - [x] Lecture 27 on 27/5/24
 - [x] Lecture 28 on 27/5/24
 - [x] Lecture 29 on 28/5/24
-- [ ] Lecture 30
+- [x] Lecture 30 on 6/6/24
 - [x] Lecture 31 on 28/5/24
 - [x] Lecture 32 on 5/5/24
-- [ ] Lecture 33
-- [ ] Lecture 34
+- [x] Lecture 33 on 7/5/24
+- [x] Lecture 34 on 7/5/24
 - [ ] Lecture 35
 - [ ] Lecture 36
 - [ ] Lecture 37

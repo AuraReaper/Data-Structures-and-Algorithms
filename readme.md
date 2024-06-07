@@ -7,8 +7,8 @@ Welcome to my personal repository documenting my journey of learning data struct
 This repository serves as a log of my exploration into the world of data structures and algorithms. As I delve deeper into this fascinating field, I'll be updating this README to reflect my progress and insights gained along the way.
 
 ### Data Structures
-- [ ] **Arrays**
-  - Basic array operations
+- **Arrays**
+  - [x] Basic array operations
   - Dynamic arrays
   - Amortized analysis
 - [ ] **Linked Lists**
@@ -36,9 +36,9 @@ This repository serves as a log of my exploration into the world of data structu
   - Hash table performance analysis
 
 ### Algorithms
-- [ ] **Searching Algorithms**
-  - Linear search
-  - Binary search
+-  **Searching Algorithms**
+  - [x] Linear search
+  - [x] Binary search
   - Depth-First Search (DFS)
   - Breadth-First Search (BFS)
 -  **Sorting Algorithms**
@@ -61,9 +61,9 @@ This repository serves as a log of my exploration into the world of data structu
   - Strassen's algorithm
 
 ### Miscellaneous
-- [ ] **Big O Notation**
+- [x] **Big O Notation**
   - Asymptotic analysis
-- [ ] **Time Complexity**
+- [x] **Time Complexity**
   - Worst-case, average-case, and best-case analysis
-- [ ] **Space Complexity**
+- [x] **Space Complexity**
   - Auxiliary space analysis
