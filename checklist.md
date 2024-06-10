@@ -31,13 +31,13 @@
 - [x] Lecture 29 on 28/5/24
 - [x] Lecture 30 on 6/6/24
 - [x] Lecture 31 on 28/5/24
-- [x] Lecture 32 on 5/5/24
-- [x] Lecture 33 on 7/5/24
-- [x] Lecture 34 on 7/5/24
-- [ ] Lecture 35
-- [ ] Lecture 36
-- [ ] Lecture 37
-- [ ] Lecture 38
+- [x] Lecture 32 on 5/6/24
+- [x] Lecture 33 on 7/6/24
+- [x] Lecture 34 on 7/6/24
+- [x] Lecture 35 on 10/6/24
+- [x] Lecture 36 on 8/6/24
+- [x] Lecture 37 on 9/6/24
+- [x] Lecture 38 on 10/6/24
 - [ ] Lecture 39
 - [ ] Lecture 40
 - [ ] Lecture 41
