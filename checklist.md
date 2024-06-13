@@ -38,9 +38,9 @@
 - [x] Lecture 36 on 8/6/24
 - [x] Lecture 37 on 9/6/24
 - [x] Lecture 38 on 10/6/24
-- [ ] Lecture 39
-- [ ] Lecture 40
-- [ ] Lecture 41
+- [x] Lecture 39 on 13/6/24
+- [x] Lecture 40 on 13/6/24
+- [x] Lecture 41 on 13/6/24
 - [ ] Lecture 42
 - [ ] Lecture 43
 - [ ] Lecture 44
