@@ -41,19 +41,19 @@
 - [x] Lecture 39 on 13/6/24
 - [x] Lecture 40 on 13/6/24
 - [x] Lecture 41 on 13/6/24
-- [ ] Lecture 42
-- [ ] Lecture 43
-- [ ] Lecture 44
-- [ ] Lecture 45
-- [ ] Lecture 46
-- [ ] Lecture 47
-- [ ] Lecture 48
-- [ ] Lecture 49
-- [ ] Lecture 50
-- [ ] Lecture 51
-- [ ] Lecture 52
-- [ ] Lecture 53
-- [ ] Lecture 54
+- [x] Lecture 42 on 26/6/24
+- [x] Lecture 43 on 26/6/24
+- [ ] Lecture 44 -- question solving on kmp algorithm
+- [x] Lecture 45 on 28/6/24
+- [x] Lecture 46 on 2/7/24
+- [x] Lecture 47 on 3/7/24
+- [x] Lecture 48 on 24/7/24
+- [x] Lecture 49 on 25/7/24
+- [x] Lecture 50 on 25/7/24
+- [x] Lecture 51 on 25/7/24
+- [x] Lecture 52 on 25/7/24
+- [x] Lecture 53 on 25/7/24
+- [x] Lecture 54 on 25/7/24
 - [ ] Lecture 55
 - [ ] Lecture 56
 - [ ] Lecture 57
