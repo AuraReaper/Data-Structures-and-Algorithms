@@ -54,10 +54,10 @@
 - [x] Lecture 52 on 25/7/24
 - [x] Lecture 53 on 25/7/24
 - [x] Lecture 54 on 25/7/24
-- [ ] Lecture 55
-- [ ] Lecture 56
-- [ ] Lecture 57
-- [ ] Lecture 58
+- [x] Lecture 55 on 25/7/24
+- [x] Lecture 56 on 25/7/24
+- [x] Lecture 57 on 26/7/24
+- [x] Lecture 58 on 26/7/24
 - [ ] Lecture 59
 - [ ] Lecture 60
 - [ ] Lecture 61
