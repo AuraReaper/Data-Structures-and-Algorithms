@@ -60,30 +60,30 @@
 - [x] Lecture 58 on 26/7/24
 - [x] Lecture 59 on 27/7/24
 - [x] Lecture 60 on 27/7/24
-- [ ] Lecture 61
-- [ ] Lecture 62
-- [ ] Lecture 63
-- [ ] Lecture 64
-- [ ] Lecture 65
-- [ ] Lecture 66
-- [ ] Lecture 67
-- [ ] Lecture 68
-- [ ] Lecture 69
-- [ ] Lecture 70
-- [ ] Lecture 71
-- [ ] Lecture 72
-- [ ] Lecture 73
-- [ ] Lecture 74
-- [ ] Lecture 75
-- [ ] Lecture 76
-- [ ] Lecture 77
-- [ ] Lecture 78
-- [ ] Lecture 79
-- [ ] Lecture 80
-- [ ] Lecture 81
-- [ ] Lecture 82
-- [ ] Lecture 83
-- [ ] Lecture 84
+- [x] Lecture 61 on 29/7/24
+- [x] Lecture 62 on 29/7/14
+- [x] Lecture 63 on 5/8/24
+- [x] Lecture 64 on 6/8/24
+- [x] Lecture 65 on 8/8/24
+- [x] Lecture 66 on 8/8/24
+- [ ] Lecture 67 -- josephus problems
+- [ ] Lecture 68 -- backtracing
+- [ ] Lecture 69 -- backtracing
+- [x] Lecture 70 on 8/8/24
+- [x] Lecture 71 on 8/8/24
+- [x] Lecture 72 on 8/8/24
+- [x] Lecture 73 on 8/8/24
+- [x] Lecture 74 on 8/8/24
+- [x] Lecture 75 on 8/8/24
+- [x] Lecture 76 on 8/8/24
+- [x] Lecture 77 on 8/8/24
+- [x] Lecture 78 on 10/8/24
+- [x] Lecture 79 on 10/8/24
+- [x] Lecture 80 on 12/8/24
+- [x] Lecture 81 on 12/8/24
+- [x] Lecture 82 on 14/8/24
+- [x] Lecture 83 on 14/8/24
+- [x] Lecture 84 on 17/8/24
 - [ ] Lecture 85
 - [ ] Lecture 86
 - [ ] Lecture 87
