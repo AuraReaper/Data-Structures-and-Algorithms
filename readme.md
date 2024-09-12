@@ -84,12 +84,12 @@
 - [x] Lecture 82 on 14/8/24
 - [x] Lecture 83 on 14/8/24
 - [x] Lecture 84 on 17/8/24
-- [ ] Lecture 85
-- [ ] Lecture 86
-- [ ] Lecture 87
-- [ ] Lecture 88
-- [ ] Lecture 89
-- [ ] Lecture 90
+- [x] Lecture 85 on 17/8/24
+- [x] Lecture 86 on 18/8/24
+- [x] Lecture 87 on 2/9/24 -- can practice second question
+- [x] Lecture 88 on 3/9/24 --  very good question 
+- [x] Lecture 89 on 10/9/24
+- [x] Lecture 90 non 12/9/24
 - [ ] Lecture 91
 - [ ] Lecture 92
 - [ ] Lecture 93
