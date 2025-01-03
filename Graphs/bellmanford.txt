@@ -1,0 +1,76 @@
+
+// dijistra algo can be applied to directed and undirected graph but with positive weights only
+// bellman ford does the same thing it calaculates the min distance from the source for each node but works with 
+// negative weights also.
+// but it only works for direted graph.
+// dijistar algo vertex ko pakad kar kam karta hai
+//belman ford edges ko pakad kar kam karta hai
+
+// if we have a cycle in which sum of all weights is  negative then no algorithm will work because of infinite loop.
+
+//                                              BELLMAN FORD ALGO PSEUDOCODE
+// step 1 --- relax your edges v-1 times.
+//              relaxing edges means update the size/distance with min dustance.
+
+// step2 ---  relax your edge one more time to detect negative  cycle 
+//       if value of the distance changes then there is cycle present else we have got our answer.
+
+
+// TIME COMPLEXITY == V*E
+// SPACE COMPLEXITY == V
+
+// NOT USE FOR UNDIRECTED GRAPH
+// NEGATIVE WEIGHT IN UNDIERECTED GRAPH NO ALGO WILL FIND ANSWER
+
+ 
+
+void bellmanford(vector<vector<int>> adj) {
+
+    int src = 0 ;
+
+
+    // calculate the size of v
+    int n = adj.size() ;
+
+    // distance to keep track
+    vector<int> distance(n , INT_MAX) ;
+    distance[src] = 0 ;
+
+    // run loop v-1 times
+    n-- ;
+    while(n--) {
+        // relax all edges
+        bool flag = 0 ;
+        for(int i = 0 ; i < adj.size() ; i++) {
+            int u = adj[i][0] ;
+            int v = adj[i][1] ;
+            int w = adj[i][2] ;
+
+            // formula to relax the edges
+            if (distance[u] != INT_MAX && distance[u] + w < distance[v]) {
+                distance[v] = distance[u] + w ;
+                flag = 1 ;
+            }
+        }
+
+        if(!flag) {
+            // return your answer 
+        }
+    }
+
+    // step 2 to detect neagtaive cycle
+    for(int i = 0 ; i < adj.size() ; i++) {
+        int u = adj[i][0] ;
+        int v = adj[i][1] ;
+        int w = adj[i][2] ;
+ 
+        if(distance[u] != INT_MAX && distance[u] + w < distance[v]) {
+            // neagative cycele detected 
+            // retuern -1 or whatever
+        }
+    }
+
+
+    // reteurn ans you dont have a negative cycle 
+
+}

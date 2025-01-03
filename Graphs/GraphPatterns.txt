@@ -1,0 +1,15 @@
+1 - Island Problem :- group all of thr simimlarv in 1 bag using bfs
+                        if there is 0,1,2 then count all 2 push them in queue and then apply bfs
+
+
+2 - If path is what you have to find
+
+3 - if connectivity is what you have observed.
+    check do you need to form adj matrix and will you form it then apply traversal algo 
+
+4 - undirected graph shortest path is done by bfs only never use dfs (time complexity increases)
+5 - for directed graph shortest path use kahns algo and then mid distance using dfs .
+
+6 - single source shortest path algorithm ---- dijistra algorithm.
+    used for weighted graph to find the shortest path 
+    used to find the shortest distance from a source to all nodes.

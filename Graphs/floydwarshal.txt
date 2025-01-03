@@ -1,0 +1,49 @@
+MULTISOURCE SHORTEST PATH ALGORITHM
+HAR EK NODE SE HAR EK NODE KA SHORTEST PATH
+USE ONLY FOR DIRECTED GRAPHS , WEIGHTS CAN BE POSITUVE OR NEGATIVE
+IF YOU CAN REACH SOMEWHERE THROUGH ANOTHER NODE TAKE A HINT FOR THIS ALGO , AKA INDIRECT CONNECTION USE FLOYD WARSHAL
+
+WARSHAL CHECKS FOR TARNSITIVE IN TGHE NODES AND FLOYD UPDATE SIT WITH MIN DISTANCE.
+
+
+
+//                                             FLOYD WARSHAL ALGORITHM
+
+ select each node as an intermediate node and visit each node throuch the intermedite node
+// while visiteng update the distanmce with the min distance
+// order of selecting the intermediate node does not matter
+// its not important that therese is only 1 node between i and j there can be many nodes from i to intermediate node and then from intermediate
+//      node to the final node
+
+IF DIAGONAL ELEMENTS ARE NEGATIVE THEN THERE IS NEGATIVE CYCLE PRESENT IN THE GRAPH
+
+//                                                                  CODE PART
+
+
+if there is no connection betwwen 2 nodes then tjat is represented as int_max in our logic
+
+for(int k = 0 ; k < n ; k++) {
+    for(int i = 0 ; i < n ; i++) {
+        for(int j = 0 ; j < n ; j++) {
+            if(mat[i][k] != INT_MAX and mat[k][j] != INT_MAX) {
+                mat[i][j] = min(mat[i][j] , mat[i][k] + mat[k][j]) ;
+            }
+        }
+    }
+}
+
+
+TIME COMPLEXITY = O(N^3) 
+SPACE COMPLEXITY = O(1)
+
+
+
+//                                                      IMPORTANT
+
+
+IF DENSE GRAPH THE TC FOR DIJISTRA IS V^3 AND FOR SPARSE IT IS V^2LOGV IF WE HAVE TO FIND MULTISOURCE SHORTEST PATH
+EXPLAIN WHY I AM CHOIOING BETWEEN DIJISTRA AND FLOYD WARSHAL IN INTERVIEW FOR EXTRA MARKS
+AND ALSO DIJISTRA IS ONLY FOR POSITUVE WEIGHTS
+
+NOW FOR BELLMAN FORD ITS TC IS ALSO V^4 FOR MULTISOURCE PATH WHEN COMPLETE GRAPH 
+

@@ -1,0 +1,66 @@
+//                                                     PRIM'S ALGORITHM
+    
+    
+//                                          USED TO SOLVE MINIMUM SPANNING TREE PROBLEMS
+
+SPANNING TREE :-  IT IS A SUBSET OF THE EDGES OF THE GRAPH THAT FORMS A TREE , WHERE EVERY NODE OF THE GRAPH IS A PART OF THE TREE
+                1. IF THERE ARE N NODES THEN THERE SHOULD BE N-1 EDGES.
+                2. NO CYCLE
+                3. ALL NODES ARE CONNECTED
+
+MINIMUM SPANNING TREE :-  IF THE TREE FORMED FROM THE GRAPH HAS THE MINIMUM WEIGHTS SUM.
+
+
+TWO TYPES OF QUESTION CAN BE ASKED FROM THIS CONCEPT
+    1. FIND MIN COST
+    2. DRAW THE SPANNING TREE
+
+REAL WORLD EXAMPLE :- LAYING RAILWAY LINES
+
+//                                                     ALGORITHMIC INTUATION
+
+1. STANDING ON A NODE CHOOSE THE PATH WITH MIN WEIGHTS
+2. UPDATE THE CHOSES PATH AND VERTEX VISITED SO THAT YOU CANT VISIT IT AGAIN , WHICH CAN LEAD TO FORMATION OF A CYCLE
+3. CONTINUE THIS PROCESS UNTIL ALL NODES ARE VISITED AND YOU WILL HAVE THE ANSWER AT LAST.
+
+
+//                                                          CODE PART
+//                             THIS CODE CAN BE USED FOR BOTH COST CALC AND TO DRAW SPANNING TREE FROM PARENTS VECTOR
+
+STEP 1. PROPRITY QUEUE , PARENT VECTOR , VISITED VECTOR , COST
+
+priority_queue<pair<int,pair<int,int>> , vector<pair<int,pair<int,int>>> , greater<pair<int,pair<int,int>>>> q ;
+// weight , child , parent
+q.push({0 , {0 , -1}}) ;
+vector<int> parent(adj.size()) ;
+vector<bool> visited(adj.size() , 0) ;
+visited[0] = 1 ;
+parent[0] = -1 ;
+int cost = 0 ;
+
+STEP 2. ITERATE THE LOOP UNTIL PROPRITY QUEUE IS EMPTY AND FILL PARENT , VISITED AND COST 
+
+while(!q.empty()) {
+    int weight = q.top().first ;
+    int ch = q.top().second.first ;
+    int pa = q.top().second.second ;
+    q.pop() ;
+
+    if(!visited[ch]) {
+        visited[ch] = 1 ;
+        cost += weight ;
+        parent[ch] = pa ;
+
+        STEP 3. PUSH THE CONNECTED NODES TO QUEUE
+        for(int i = 0 ; i < adj[ch].size() ; i++) {
+            if(!visited[adj[ch][i][0]]) {                               // well checking depends on the format of the adj list
+                 q.push({weight , {vertex at i , ch}})    // depending on the format of adj list push weights , parent will be ch and child
+            }
+        }
+    }
+}
+
+
+
+TIME COMPLEXITY = E LOG V
+SPACE COMPLEXITY = V + E

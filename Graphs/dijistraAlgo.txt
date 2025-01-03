@@ -1,0 +1,97 @@
+// method 1
+void m1(vector<vector<pair<int,int>>>& adj , int src) {
+
+    vector<bool> explored(adj.size() , 0) ;
+    vector<int> distance(adj.size() , INT_MAX) ;
+    distance[src] = 0 ;
+
+
+
+    // for finding min distance
+    int node = -1 , value = INT_MAX ;
+
+    // find distance from all the nodes
+    int n = adj.size() ;
+    while(n--) {
+        //step 1 :  select a node which is unexplored and has min distance
+        for(int i = 0 ; i < adj.size() ; i++) {
+            if(!explored[i] and value > distance[i]) {
+                node = i ;
+                value = distance[i] ;
+            }
+        }
+
+        explored[node] = 1 ;
+
+        // step 2 : relax your edges , i mean look at your unexplored neighbours and update the min distance
+        for(int i = 0 ; i < adj[node].size() ; i++) {
+            int neighbour = adj[node][i].first ;
+            int weight = adj[node][i].second ;
+            if(!explored[neighbour]) {
+                distance[neighbour] = min(distance[neighbour] , distance[node] + weight) ;
+            }
+        }
+    }
+
+
+    // your amnswer is the distance vector 
+    // tc is v square and sc is v 
+    // best for dense graph
+
+}
+
+
+
+// method 2 
+void m2(vector<vector<pair<int,int>>>& adj , int src) {
+
+    // intialize heap with 0,src
+    //while heap is empty
+    // update teh distance of unexplored npodes with min distance aka relax the edges
+
+
+    vector<bool> explored(adj.size() , 0) ;
+    vector<int> distance(adj.size() , INT_MAX) ;
+    distance[src] = 0 ;
+
+    priority_queue<pair<int,int> , vector<pair<int,int>> , greater<pair<int,int>>> q ;
+    q.push(make_pair(0 , src)) ;
+
+    int node ;
+
+
+    while(!q.empty()) {
+        node = q.top().second ;
+        q.pop() ;
+        if(explored[node]) {
+            continue ;
+        }
+
+        explored[node] = 1 ;
+
+        for (int i = 0 ; i < adj[node].size() ; i++) {
+            int neighbour = adj[node][i].first;
+            int weight = adj[node][i].second;
+
+            // Relax the edge if a shorter path is found
+            if (!explored[neighbour]) {
+                distance[neighbour] = min(distance[node] + weight , distance[neighbour]);
+                q.push({distance[neighbour], neighbour}); // Push updated distance
+            }
+        }
+    }
+
+
+    // retrun distance
+
+    // tc is elogv
+    // sc is v + e
+    //best for sparse graph
+
+    // majority times we use this method
+}
+
+int main() {
+    
+    return 0;
+}

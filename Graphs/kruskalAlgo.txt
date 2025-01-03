@@ -1,0 +1,90 @@
+//                                                     KRUSKAL ALGORITHM
+//                              USED TO SOLVE MINIMUM SPANNING TREE PROBLEMS
+
+WE WILL USE DISJOINT SETS FOR IMPLEMENTATION OF THIS ALGORITHM
+
+//                                                      ALGORITHM INTUATION
+
+NOTE :- WELL ITS KIND OF COMPLEX SO LEAEN IT
+
+1. FIND THE ULTIMATE PARENT OF U AND V.
+2. FIND THE RANK OF ULTIMATE PARENTS.
+3. MERGE THE SMALLER SET INTO LAREGER SET.
+
+//                                                          CODE
+
+
+STEP 1. FIND ULTIMATE PARENT
+
+int findParent(int u , vector<int>& parent) {
+    if(u == parent[u]) {
+        return u ;
+    }
+
+    return parent[u] = findParent(parent[u] , parent) ; // ALSO APPLIED PATH COMPRESSION
+}
+
+STEP 2. UNION BY RANK
+
+void union(int u , int v , vector<int>& parent , vector<int>& rank) {
+    int pu = findParent(u , parent) ;
+    int pv = findParent(v , parent) ;
+    
+    if(rank[pu] > rank[pv]) {
+        parent[pv] = pu ;
+    } else if(rank[pu] < rank[pv]) {
+        parent[pu] = pv ;
+    } else {
+        rank[pv] = pu ;
+        rank[pu]++ ;
+    }
+}
+
+STEP 3. 
+
+int main() {
+
+    vector<int> parent(V) ;
+    vector<int> rank(V , 0) ;
+    
+    for(int i = 0 ; i < V ; i++) {
+        parent[i] = i ;
+    }
+ 
+    // weight , u , v
+    priority_queue<pair<int,pair<int,int>> , vector<pair<int,pair<int,int>>> , greater<pair<int,pair<int,int>>>> q ;
+    
+    for(int i = 0 ; i < V ; i++) {
+        for(int j = 0 ; j < adj[V].size() ; j++) {
+            q.push({weight , {i , }})  // PUSH ACCORDING TO ADJ FORMAT
+        }
+    }
+    
+    int cost = 0 ;
+    int edges = 0 ;
+
+    while(!q.empty()) {
+        int wt = q.top().first ;
+        int u = q.top().second.first ;
+        int v = q.top().second.second ;
+        q.pop() ;
+
+        // check if they are in different set 
+        if(findParent(u , parent) != findParent(v , parent)) {
+            cost += wt ;
+            union(u , v , parent , rank) ;
+            edges++ ;
+        }
+
+        if(edges == V - 1) {
+            break ;
+        }
+    }
+
+    return cost ;
+
+}
+
+
+TIME COMPLEXITY = ????
+SPACE COMPLEXITY = ?????
