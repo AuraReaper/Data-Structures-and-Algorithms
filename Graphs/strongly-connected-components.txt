@@ -1,0 +1,166 @@
+IN A DIRECTED GRAPH SSC IS A SUBSET OF VERTICES WHERE EVERY VERTEX IN THE SUBSET IS RECHABLE FROM EVERY OTHER VERTEX IN
+    THE SAME SUBSET BY TRAVERSING THE DIRECTED EDGES
+
+    IN A EASY WAY IF I CAN GO FROM 3 TO 11 THEN THERE SHOULD BE A PTH BY WHICH I CAN COME FROM 11 TO 3
+    SINGLE NODES ARE ALSO CONSIDERED SSC
+
+
+NOTE :- IN AN SCC IF THE EDGES ARE REVERSECD THEN IT STILL IS AN SCC 
+
+QUESTIONS ASKED ON THIS PATTERN
+    1. TO FIND THE COUNT OF THE SSC
+    2. TO PRINT THE SSC
+
+
+//                                                  KOSARAJU ALGORITHM
+
+1. FIND TOPOLOGICAL SORTING
+2. REVERSE THE EDGES
+3. POP ELEMENT FROM THE STACK
+    IF IT IS NOT VISITED 
+        SCC++ 
+        APPLY DFS
+    ELSE
+        POP
+
+//                                                  CODE OF KOSARAJU ALGORITHM
+
+1. TOPOLOGICAL SORTING
+
+void topoSort(int curr , adj , visited stack st) {
+
+    visited[curr] = 1;
+    for(int i = 0 ; i < adj[curr].size() ; i++) {
+        if(!visited[adj[curr][i]]) {
+            topoSort(adj[curr][i] , adj , visited) ;
+        }
+    }
+
+    st.push(curr) ;
+}
+
+stack<int> st ;
+vector<bool> visited(Adj.size() , 0) ;
+
+for(int i = 0 ; i < adj.size() ; i++) {
+    topoSort(i , adj , visited , st) ;
+}
+
+
+2. REVERSE THE EDGES
+
+vector<vector<int>> adj2(adj.size()) ;
+
+for(int i = 0 ; i < adj.size ; i++) {
+    for(int j = 0 ; j < adj[i].size() ; i++) {
+        int u = i ;
+        int v = adj[i][j] ;
+        adj2[v].push_back(u) ;
+    }
+}
+
+3. POP ELEMENT FROM STACK AND CHECK
+
+
+
+void dfs(int curr , adj , visited) {
+    visited[curr] = 1 ;
+
+    for(int i = 0 ; i < adj[cur][i] ; i++) {
+        if(!visited) {
+            call dfs 
+        }
+    }
+}
+
+clear the visited vector 
+
+int scc = 0 ;
+
+while(!st.empty()) {
+    int temp = st.top() ;
+    st.pop() ;
+
+    if(!visited[temp]) {
+        sc++ ;
+        dfs(temp , adj2 , visited) ;
+    }
+}
+
+
+return scc ;
+
+
+
+TIME COMPLEXITY :- V + E
+SPACE COMPLEXITY :- V + E
+
+
+//                                                          TARJAN'S ALGORITHM
+
+if(neighbour is not visited) {
+    mark visited 
+    call dfs
+    low[node] = min (low[node] , discovery[neighbour]) ;
+} else {
+    if neighbour is already in stack {
+        low[node] = min(low[node] , discovery[neighbour]) ;
+    }
+}
+
+//                                                              TARJAN's ALGORITHM CODE
+
+
+void dfs(pass by reference) {
+    
+    visited[node] = 1 ;
+    discovery[node] = low[node] = timer ;
+    s.push(node) ;
+    instack[node] = 1 ;
+
+    for(int i = 0 ; i < adj[curr].size() ; i++) {
+        int neighbour = adj[node][i] ;
+
+        if(!visited[neighbour]) {
+            timer++ ;
+            call dfs for neighbour
+            low[node] = min(low[node] , discovery[neighbour]) ;
+        } else {
+            if(instack[neighbour]) {
+                 low[node] = min(low[node] , discovery[neighbour]) ;
+            }
+        }
+    }
+
+    if(discovery[node] == low[node]) {
+            WE HAVE A SCC YOU CAN PUSH BIN VECTOR OR COUNT IT NOW
+            
+            vector<int> temp ;
+            while(!s.empty() and s.top() != node) {
+                temp.push_back(s.top()) ;
+                instack[s.top()] = 0 ;
+                s.pop() ;
+            }
+
+            temp.push_back(node) ;
+            instack[s.top()] = 0 ;
+            s.pop() ;
+    }
+}
+
+
+vector<vector<int>> ans ;
+vector<int> discovery(V) ;
+vector<int> low(V) ;
+vector<bool> visited(V , 0) ;
+stack<int> s ;
+vector<bool> instack(V , 0) ;
+int timer = 0 ;
+
+for(int i = 0 ; i < V ; i++) {
+    if not visited {
+        dfs(i , asj , visited , discovery , low , s , instack , ans , timer) ;
+    }
+}
+
+return ans ;

@@ -1,0 +1,82 @@
+A BRIDGE IN A GRPAH IS AN EDGE WHICH IF REMOVED THE GRAPH IS DIVIDED INTO TWO COMPONENTS
+
+TARJAN'S ALGORITHM CAN BE USED TO SOLVE THIS KIND OF PROBLEMS
+
+TARJAN ASKS KYA TUM MUJSE AND MUJSE PHELE WALE SE CONNECT HO SKATA HAI 
+
+FREQUENTLY ASKED IN AMAZAON'S INTERVIEW
+
+CONDITION FOR THE GRAPH TO BE PRESENT IS :-   discovery[node] < low[neighbour]
+
+
+discovery :- the time or ordsr the nodes is first visited
+low :- the minimium possible node that can be reached in that cycle
+        it stores the lowest discovery time rechable from current node 
+
+
+1. hota yaha ye hai ki jab bhi hum koi node dekhte hai to usko ek number de deta hai discovery matlab tum is time discover hua ho
+2. sath hi hum low wale vectoe ko same discovery wala number de dete hai 
+3. ye sab dfs lagte tiume ho raha hota hai
+4. ab jab cycle dikhta hai to phir hum low wale ko update kar dete hai min low time se , kahne ka matlab ye hai ki 
+    us cycle me llowest hum 1 ko visit kar sakte hai aut hum abhi 4 par hai to koi na koi rast zarror hoga ki hum 1 tak pauch jaye to
+    waha bridge nahi hoga
+5. usi tarh man lo ki hum 6 ko discover hua hai aur dusra wala 5 ko aur hum phir 5 , 6 wale node se puchte hai ki kya tum 
+    kisi tarah 5 se phele discover hua node par ja sakte ho agar ha to matlab tum 5 ko bhi ja sakte ho q ki cycle present hai
+    aur nahi iska matlab ki cycle nahi hai aye agar connection tuta to phir 2 alag componen ts ban jayenge 
+
+    yahi to hume detect karna tha 
+
+//                                                  LEETCODE 1192
+
+class Solution {
+public:
+
+    void dfs(int node , int parent , vector<vector<int>>& adj , vector<int>& discovery , vector<int>& low , vector<bool>& visited , vector<vector<int>>& bridge , int &count) {
+
+        discovery[node] = low[node] = count ;
+        visited[node] = 1 ;
+
+        for(int i = 0 ; i < adj[node].size() ; i++) {
+            int neigh = adj[node][i] ;
+
+            if(neigh == parent) {
+                continue ;
+            } else if(visited[neigh]) {
+                low[node] = min(low[node] , low[neigh]) ;
+            } else {
+                count++ ;
+                dfs(neigh , node , adj , discovery , low , visited , bridge , count) ;
+                low[node] = min(low[node] , low[neigh]) ;
+                if(discovery[node] < low[neigh]) {
+                    // bridge exists
+                    vector<int> temp ;
+                    temp.push_back(node) ;
+                    temp.push_back(neigh) ;
+                    bridge.push_back(temp) ;
+                }
+            }
+        }
+    }
+
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
+
+        vector<vector<int>> adj(n) ;
+
+        for(int i = 0 ; i < connections.size() ; i++) {
+            int u = connections[i][0] ;
+            int v = connections[i][1] ;
+            adj[u].push_back(v) ;
+            adj[v].push_back(u) ;
+        }
+
+        vector<vector<int>> bridge ;
+        vector<int> discovery(n) ;
+        vector<int> low(n) ;
+        vector<bool> visited(n , 0) ;
+        int count = 0 ;
+
+        dfs(0 , -1 , adj , discovery , low , visited , bridge , count) ;
+
+        return bridge ;
+    }
+}

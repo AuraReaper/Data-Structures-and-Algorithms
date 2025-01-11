@@ -1,0 +1,65 @@
+AN ARTICULATION POINT IN A GRPAH IS A NODE WHICH IF REMOVED THE GRAPH IS DIVIDED INTO TWO COMPONENTS
+
+IT SAYS THAT KYA TUM MUJSE PHELE WALE SE CONNECT HO SKATA HAI IN TARJAN ALGORITHM
+
+OBSERVATION :- A NODE WHOSE ALL EDGES IS A PART OF ONE CYCLE ONLY IS NOT AN ARTICULATION POINT 
+    THIS IS ANA OBSERVATION ANS NOT A CONCRETE STATEMNT BECAUSE THERE ARE EDGE CASES
+
+CONDITION :- discovery[node] <= low[neighbour]
+
+discovery :- the time or ordsr the nodes is first visited
+low :- the minimium possible node that can be reached in that cycle
+        it stores the lowest discovery time rechable from current node 
+
+
+HERE THE UPDATION IS DIFFERRENT COMPARED TO BRIDGE
+    low[node] = min(low[node] , discover[neighbour]) // in case of bridge there used to be low[neighbour]
+
+IF ROOT NODE HAS MORE THAN 1 CHILDREN THAN ONLYB IT IS AN ARTICULATION POINT ELSE WE DONT CHECK FOR IT OR 
+    YOU CAN SAY WE CHECK THIS CONDITION SEPERATELY ALSO THE TWO CHILDREN SHOULD NOT BE PART OF ONE CYCLE
+
+
+//                                                      PSEUDO CODE
+
+if(visited[neighbour]) {
+    low[node] = min(low[node] , discovery[neighbour]) ;
+} else {
+    visited[neighbour] = 1 ;
+    if(discovery[node] <= low[neighbour] and parent != -1) {
+        ARTICULATION POINT HAI
+    }
+
+    low[node] = min(low[node] , low[neighbour]) ; 
+}
+
+
+//                                                      CODE
+
+void dfs(pass evertyhng) {
+    visited[node] = 1 ;
+    discovery[node] = low[node] = timer ;
+    int child = 0 ;
+
+    for(int j = 0 ; j < adj[node].size() ; j++) {
+        int neighbour = adj[node][j] ;
+        if(neighbour == parent) {
+            continue ;
+        } else if(visited[neighbour]) {
+            low[node] = min(low[node] , discover[neighbour]) ;
+        } else {
+            child++ ;
+            timer++ ;
+            dfs(pass values) ;
+            if(discovery[node] <= low[neighbour]) {
+                artpoint[node] = 1 ;
+            }
+
+            low[node] = min(low[node] , low[neighbour]) ;
+        }
+    }
+
+
+    if(child > 1 and parent == -1) {
+        artpoint[node] = 1 ;
+    }
+}
