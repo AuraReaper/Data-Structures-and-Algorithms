@@ -4,11 +4,11 @@ using namespace std;
 // 2 coluring algorithm is used to check for bipartite graph
 
 
-// using bfs and colur algo
+// using bfs and colour algo
 bool bfscolour(vector<vector<int>>& graph) {
     vector<int> colour(graph.size() , -1) ;
     queue<int> q ;
-    q.push(0) ;
+    q.push(0) ; 
     colour[0] = 0 ;
     int temp ;
     while(!q.empty()) {
